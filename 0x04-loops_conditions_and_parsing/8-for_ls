@@ -5,4 +5,21 @@
 list=$(ls)
 for i in $list; do
   echo "$i" | cut -d '-' -f2
+for file in *
+do
+    if [ ! -f "$file" ] || [[ "$file" == .* ]]
+    then
+        continue
+    fi
+
+    filename=$(basename -- "$file")
+    extension="${filename##*.}"
+    filename="${filename%.*}"
+
+    if [[ $filename == *-* ]]
+    then
+        filename="${filename#*-}"
+    fi
+
+    printf "%s\n" "$filename"
 done
