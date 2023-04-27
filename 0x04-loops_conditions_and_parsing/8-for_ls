@@ -1,21 +1,6 @@
 #!/usr/bin/env bash
 # ls using for loop
 
-for file in *
-do
-    if [ ! -f "$file" ] || [[ "$file" == .* ]]
-    then
-        continue
-    fi
-
-    filename=$(basename -- "$file")
-    extension="${filename##*.}"
-    filename="${filename%.*}"
-
-    if [[ $filename == *-* ]]
-    then
-        filename="${filename#*-}"
-    fi
-
-    printf "%s\n" "$filename"
+for file in *; do
+  echo "$file" | cut -d '-' -f 2;
 done
