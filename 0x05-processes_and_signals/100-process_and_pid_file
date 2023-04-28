@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 # Create PID file
+
+terminator() {
+  rm /var/run/myscript.pid
+  exit
+}
+
 echo $$ > /var/run/myscript.pid
 
 # Trap signals
