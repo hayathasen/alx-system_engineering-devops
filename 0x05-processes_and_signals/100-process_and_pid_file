@@ -14,7 +14,8 @@ trap 'echo "Y U no love me?!"' SIGINT
 trap 'rm /var/run/myscript.pid; exit' SIGQUIT SIGTERM
 
 # Display message
-while true; do
+while true
+do
     echo "To infinity and beyond"
     sleep 2
 done
