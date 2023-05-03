@@ -1,3 +1,4 @@
 #!/usr/bin/env ruby
-
-$ ruby match_school.rb "I go to School"
+string = "Welcome to School"
+match_data = string.match(/School/)
+puts match_data[0] # => "School"
