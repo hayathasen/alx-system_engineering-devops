@@ -1,0 +1,1 @@
+Regular expression (regex) matching is a sequence of characters that specifies a match pattern in text. It is used to match character combinations in strings. The Match method returns the first substring that matches a regular expression pattern in an input string
