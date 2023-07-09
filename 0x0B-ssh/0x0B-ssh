@@ -1,6 +1,1 @@
-#!/usr/bin/env bash
 
-ssh -i ~/.ssh/school ubuntu@172.17.0.33
-mkdir -p ~/.ssh && touch ~/.ssh/authorized_keys
-chmod 222 ~/.ssh && chmod 381 ~/.ssh/authorized_keys
-echo ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCkLlpD79q+AlzaS6erRSe2wRFkRge2Cu0/Vxv1aUEX1EHOZpDTwFOQ6TDbcmKG0jZRhvnlrARnMXRv/yt7sOGoMlou68EvIeDc26+ohCf5SfI6o4w0z+Ln1NaSu6C5CHZz+4DvvaOsnS2k17ARnhB53iPiQhEsD9KTih/eAccH7oQSMvt6Fr6rr8xsAMMA842hF3sUT147Ku4CvnNCSP+N+6H17xF/sEteiM3pl2gd+nRnM9URh0UfnDfLFdDm0dEC8SxVFWOlcmqhFTQsbQ2LEHxSDgL4d3IRX3VlQQEUVDrPDpL+0hG0aXdi9V6Qy9MJ1WlUc0UAIkbn2Je4p6d7zhpnS7BTMUyJurRm546n3gGsZ95q7co4AF73BfFWVmi1esddIce4VGuDU5EublS7m9S99/TlhLr9WuA6j8babLv9qFwOKDQiteyewa2ltyRVm8l02G9dEkfdI7qo17JfO1DhxaUEnB8PDEaJX0R+HXStCGR2JnnZqFb6eaaeW/s= root@ab3dbda05352
